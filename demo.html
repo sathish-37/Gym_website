@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> <span2>pin</span2><span>ky <span1>uni</span1>sex</span> </a>
+        <nav>
+            <ul class="nav">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Plans">packages</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="login">Join </a>
+    </header>
+
+<section>
+    <div class="banner"  style="--quantity:10" id="Home">
+        <div class="slider">
+            <div class="item" style="--position:1"><img src="gym1.jpg" alt=""></div>
+            <div class="item" style="--position:2"><img src="gym2.webp" alt=""></div>
+            <div class="item" style="--position:3"><img src="gym4.jpg" alt=""></div>
+            <div class="item" style="--position:4"><img src="gym5.webp" alt=""></div>
+            <div class="item" style="--position:5"><img src="gym6.webp" alt=""></div>
+            <div class="item" style="--position:6"><img src="gym7.webp" alt=""></div>
+            <div class="item" style="--position:7"><img src="gym8.jpg" alt=""></div>
+            <div class="item" style="--position:8"><img src="fitness1.jpg" alt=""></div>
+            <div class="item" style="--position:9"><img src="fitness2.jpg" alt=""></div>
+            <div class="item" style="--position:10"><img src="fitness3.jpg" alt=""></div>
+        </div>
+    </div></section>
+    <!-- services -->
+    <section class="services" id="Services"></section>
+    <h2 class="heading">Our  <span3>Services</span3></h2>
+
+    <div class="services-content">
+        <div class="row">
+            <img src="physical.jpg" alt="">
+            <h4><span4>P</span4>hysical <span4>F</span4>itness</h4>
+        </div>
+
+        <div class="row">
+            <img src="personal.webp" alt="">
+            <h4><span4>P</span4>ersonal <span4>T</span4>raining</h4>
+        </div>
+        <div class="row">
+            <img src="gain.webp" alt="">
+            <h4><span4>W</span4>eight <span4>G</span4>ain</h4>
+        </div>
+        <div class="row">
+            <img src="strength.jpeg" alt="">
+            <h4><span4>S</span4>trength <span4>F</span4>itness</h4>
+        </div>
+        <div class="row">
+            <img src="l.webp" alt="">
+            <h4><span4>W</span4>eight <span4>L</span4>ifting</h4>
+        </div>
+        <div class="row">
+            <img src="run.jpg" alt="">
+            <h4><span4>R</span4>unning</h4>
+        </div>
+    </div>
+    <!-- about -->
+    <section class="about-section" id="About">
+        <h2>About <span4>Us</span4></h2>
+        <div class="about-content">
+            <img src="about.jpg" alt="Gym Image" class="about-image">
+
+            
+            <p>Welcome to PinkY unisex! We offer a variety of fitness services and state-of-the-art equipment to help you achieve your health goals. Whether you're looking to build strength, improve endurance, or simply stay active, we are here to support your fitness journey.</p>
+            <div id="extra-content" class="extra-content">
+                <p>PinkY unisex, our mission is to provide a friendly, motivating environment that encourages individuals to lead healthier lives. Our team consists of experienced trainers who are dedicated to helping you every step of the way. Join us today and experience a new level of fitness!</p>
+            </div>
+            <button id="read-more-btn" onclick="toggleContent()">Read More</button>
+        </div>
+    </section>
+    <script>
+        function toggleContent() {
+            const extraContent = document.getElementById('extra-content');
+            const btn = document.getElementById('read-more-btn');
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+                btn.textContent = "Read Less";
+            } else {
+                extraContent.style.display = "none";
+                btn.textContent = "Read More";
+            }
+        }
+    </script>
+
+    <section class="plans" id="Plans">
+        <h2 class="heading" style="color: gray;"><span4>Our</span4> Plans</h2>
+           <div class="plan-content">
+            <div class="box">
+                <h3>Basic</h3>
+                <h2><span4>$100/Month</span4></h2>
+                <ul>
+                    <li>Pro Gym</li>
+                    <li>Smart Work Plan</li>
+                    <li>At Home Work</li>
+                </ul>
+                <a href="#">
+                    join now
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>PREMIUM</h3>
+                <h2><span4>$400/Month</span4></h2>
+                <ul>
+                    <li>ELITE GYMs and Classes</li>
+                    <li>Smart Work Plan</li>
+                    <li>At Home Work</li>
+                    
+                </ul>
+                <a href="#">
+                    join now
+                </a>
+            </div>
+
+            <div class="box">
+                <h3>PRO PREMIUM</h3>
+                <h2><span4>$700/Month</span4></h2>
+                <ul>
+                    <li>Personal Trainer Avaliable</li>
+                    <li>Smart Work Plan</li>
+                    <li>At Home Work</li>
+                    <li>Personal Training</li>
+                </ul>
+                <a href="#">
+                    join now
+                </a>
+            </div>  
+
+           </div>  
+    </section>
+
+
+    <!-- review -->
+    <div class="review">
+        <h1>Our <span4>Trainer</span4></h1>
+    </div>
+    
+    <div class="review-container">
+        <div class="card1">
+            <div class="card-inner">
+                <!-- Front of the Card -->
+                <div class="card-front">
+                    <img src="jen selter.jpg" alt="Gym Member">
+                    <h2><span4>J</span4>en selter</h2>
+                    <p><span4>G</span4>ym <span4>E</span4>nthusiast</p>
+                </div>
+                <!-- Back of the Card -->
+                <div class="card-back">
+                    <img src="jen selter1.jpg" alt="">
+                    <p>"This gym has helped me achieve my fitness goals. The trainers are amazing, and the atmosphere is motivating!"</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card1">
+            <div class="card-inner">
+                <!-- Front of the Card -->
+                <div class="card-front">
+                    <img src="111.jpg" alt="Gym Member">
+                    <h2><span4>S</span4>athish</h2>
+                    <p><span4>F</span4>itness <span4>T</span4>rainer</p>
+                </div>
+                <!-- Back of the Card -->
+                <div class="card-back">
+                    <img src="sathish1.jpg" alt="">
+                    <p>"Great gym with excellent equipment. I love the community here!"</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="card1">
+            <div class="card-inner">
+                <!-- Front of the Card -->
+                <div class="card-front">
+                    <img src="dhilip.jpg" alt="Gym Member">
+                    <h2><span4>D</span4>hilip</h2>
+                    <p><span4>B</span4>odybuilder</p>
+                </div>
+                <!-- Back of the Card -->
+                <div class="card-back">
+                    <img src="dhilip11.jpg" alt="">
+                    <p>"The gym has everything I need to build strength and stay fit!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.querySelectorAll('.card1').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
+            });
+    
+            card.addEventListener('mouseout', () => {
+                card.querySelector('.card-inner').style.transform = 'rotateY(0deg)';
+            });
+        });
+    </script>
+    <!-- contact us --> 
+    <section class="contact-section" id="contact" style="margin-top: 200px;">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Feel free to reach out to us for any queries or assistance.</p>
+        <form action="/submit_form" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Gym Name. All Rights Reserved.</p>
+            <ul>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
+service_jhlreoj
